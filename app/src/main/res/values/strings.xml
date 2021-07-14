@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Kuis</string>
+    <string name="judul">Kuis Pengetahuan Kehamilan</string>
+    <string name="button_mulai">Mulai Kuis</string>
+    <string name="correct_answer">Jawaban benar!</string>
+    <string name="wrong_answer">Jawaban salah!</string>
+    <string name="pertanyaan1">Usia ideal untuk seorang wanita mengandung berkisar 20-35 tahun</string>
+    <string name="pertanyaan2">Ibu hamil memerlukan asupan sekitar 500-550 kalori setiap hari sejak trimester kedua dan ketiga </string>
+    <string name="pertanyaan3">Preeklampsia merupakan suatu kondisi ketika tekanan darah tinggi dan kadar protein di dalam urin abnormal setelah 20 minggu kehamilan</string>
+    <string name="pertanyaan4">Masa kehamilan akan terjadi berbagai perubahan pada ibu, baik
+                                secara fisiologi maupaun psikologi. Perubahan tersebut sebagian besar adalah
+                                karena pengaruh hormon estrogen dan progesteron</string>
+    <string name="pertanyaan5">Fatigue atau kelelahan yang dialami oleh ibu hamil trimester 1 disebabkan karena ibu mengalami kurang yodium</string>
+    <string name="pertanyaan6">Morning sickness (mual muntah) pada ibu hamil dapat diatasi dengan melakukan senam hamil</string>
+    <string name="pertanyaan7">Makanan yang baik dikonsumsi untuk ibu hamil adalah makanan yang mengandung karbohidrat,protein,vitamin dan mineral</string>
+    <string name="pertanyaan8">Peningkatan metabolisme dan peningkatan hormon estrogen,progesteron dan HCG menyebabkan ibu hamil mudah merasa lelah</string>
+    <string name="pertanyaan9">Pada saat usia kehamilan sudah memasuki 2 bulan terakhir sebelum persalinan, ibu hamil diperbolehkan tidur dengan posisi terlentang</string>
+    <string name="pertanyaan10">Kekurangan Energi Kronis (KEK) merupakan kelelahan yang luar biasa yang dialami oleh ibu hamil, selain kelelahan KEK juga dapat mengakibatkan bayi lahir dengan berat badan rendah</string>
+    <string name="prev_text">Previous</string>
+    <string name="next_text">Next</string>
+    <string name="hiasan">hiasan</string>
+    <string name="bumil">bumil</string>
+</resources>
