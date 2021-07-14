@@ -1,6 +1,7 @@
 package com.example.kuis;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,7 +17,7 @@ public class LamanKuis extends AppCompatActivity implements View.OnClickListener
 
     private TextView question_textView, result_textView;
     private Button button_true, button_false;
-    private ImageButton prev_button, next_button;
+    private ImageButton prev_button, next_button, imageButton;
     private int correct = 0;
     private int currentQuestionIndex = 0;
 
@@ -34,7 +35,6 @@ public class LamanKuis extends AppCompatActivity implements View.OnClickListener
             new Question(R.string.pertanyaan8, true),
             new Question(R.string.pertanyaan9, false),
             new Question(R.string.pertanyaan10, true),
-
     };
 
     @Override
@@ -42,6 +42,7 @@ public class LamanKuis extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_laman_kuis);
 
+        imageButton = findViewById(R.id.imageButton);
         question_textView = findViewById(R.id.textView2);
         button_true = findViewById(R.id.button_true);
         button_false = findViewById(R.id.button_false);
@@ -54,7 +55,7 @@ public class LamanKuis extends AppCompatActivity implements View.OnClickListener
         prev_button.setOnClickListener(this);
 
         question_textView.setText(R.string.pertanyaan1);
-
+        imageButton.setVisibility(View.INVISIBLE);
     }
 
     @SuppressLint({"SetTextI18n", "StringFormatInvalid"})
@@ -67,13 +68,19 @@ public class LamanKuis extends AppCompatActivity implements View.OnClickListener
         switch (v.getId()) {
             case R.id.button_false:
                 checkAnswer(false);
+                button_false.setVisibility(View.INVISIBLE);
+                button_true.setVisibility(View.INVISIBLE);
                 break;
 
             case R.id.button_true:
                 checkAnswer(true);
+                button_false.setVisibility(View.INVISIBLE);
+                button_true.setVisibility(View.INVISIBLE);
                 break;
 
             case R.id.next_button:
+                button_false.setVisibility(View.VISIBLE);
+                button_true.setVisibility(View.VISIBLE);
                 // go to next question
                 // limiting question bank range
                 if (currentQuestionIndex < 11) {
@@ -86,14 +93,11 @@ public class LamanKuis extends AppCompatActivity implements View.OnClickListener
                     if (currentQuestionIndex == 10) {
                         question_textView.setText(getString(
                                 R.string.correct_answer, correct));
-                        next_button.setVisibility(
-                                View.INVISIBLE);
-                        prev_button.setVisibility(
-                                View.INVISIBLE);
-                        button_true.setVisibility(
-                                View.INVISIBLE);
-                        button_false.setVisibility(
-                                View.INVISIBLE);
+                        next_button.setVisibility(View.INVISIBLE);
+                        prev_button.setVisibility(View.INVISIBLE);
+                        button_true.setVisibility(View.INVISIBLE);
+                        button_false.setVisibility(View.INVISIBLE);
+                        imageButton.setVisibility(View.VISIBLE);
                         if (correct > 6)
                             question_textView.setText(
                                     "Poin anda " + correct
@@ -158,5 +162,10 @@ public class LamanKuis extends AppCompatActivity implements View.OnClickListener
                 .makeText(LamanKuis.this, toastMessageId,
                         Toast.LENGTH_SHORT)
                 .show();
+    }
+
+    public void buttonHome(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

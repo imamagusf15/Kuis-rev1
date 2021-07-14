@@ -7,20 +7,6 @@
     android:background="#FFAB40"
     tools:context=".introKedua">
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/acme"
-        android:text="INFO PENTING NIH !"
-        android:textColor="#8E1010"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
@@ -33,45 +19,78 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_background_right" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="177dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="143dp"
-        android:fontFamily="@font/acme"
-        android:text="Trisemester Ketiga"
-        android:textColor="#0B0A0A"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="393dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:fontFamily="@font/acme"
-        android:text="Trimester ketiga berlangsung dari minggu ke-28 kehamilan sampai masa kelahiran bayi. Pada trimester ketiga, janin sudah bisa membuka, menutup mata, dan menghisap jempolnya. Janin bisa menendang, merenggangkan badan, dan merespon cahaya.
-
-Memasuki bulan kedelapan, pertumbuhan otak akan berlangsung terus dan cepat"
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/acme"
+            android:text="INFO PENTING NIH !"
+            android:textColor="#8E1010"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/acme"
+            android:text="Trisemester Ketiga"
+            android:textColor="#0B0A0A"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/acme"
+            android:textColor="#232323"
+            android:text="Trimester ketiga berlangsung dari minggu ke-28 kehamilan sampai masa kelahiran bayi. Pada trimester ketiga, janin sudah bisa membuka, menutup mata, dan menghisap jempolnya. Janin bisa menendang, merenggangkan badan, dan merespon cahaya. Memasuki bulan kedelapan, pertumbuhan otak akan berlangsung terus dan cepat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginEnd="158dp"
-        android:layout_marginRight="158dp"
-        android:layout_marginBottom="93dp"
-        android:text="Next"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.841">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:onClick="introMateri"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="introMateri3"
+            android:text="Next" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

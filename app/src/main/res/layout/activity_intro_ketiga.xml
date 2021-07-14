@@ -7,20 +7,6 @@
     android:background="#FFAB40"
     tools:context=".introKetiga">
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/acme"
-        android:text="INFO PENTING NIH !"
-        android:textColor="#8E1010"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
@@ -33,88 +19,122 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_background_right" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="104dp"
-        android:fontFamily="@font/acme"
-        android:text="Jadwal memeriksakan kehamilan"
-        android:textColor="#0B0B0B"
-        android:textSize="20sp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="387dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/acme"
-        android:text="Jika kandunganmu normal dan sehat, lakukanlah pemeriksaan kehamilan secara rutin untuk memantau kondisi janin, sesuai jadwal berikut:
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/acme"
+            android:text="INFO PENTING NIH !"
+            android:textColor="#8E1010"
+            android:textSize="30sp" />
 
-Usia kehamilan 4-28 minggu (trimester pertama): sebulan sekali.
-Usia kehamilan 28-36 minggu (trimester kedua): dua minggu sekali.
-Usia kehamilan 36-40 minggu (trimester ketiga): seminggu sekali."
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/acme"
+            android:text="Jadwal memeriksakan kehamilan"
+            android:textColor="#0B0B0B"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/acme"
+            android:textColor="#232323"
+            android:justificationMode="inter_word"
+            android:text="Jika kandunganmu normal dan sehat, lakukanlah pemeriksaan kehamilan secara rutin untuk memantau kondisi janin, sesuai jadwal berikut:\n- Usia kehamilan 4-28 minggu (trimester pertama): sebulan sekali.\n- Usia kehamilan 28-36 minggu (trimester kedua): dua minggu sekali.\n- Usia kehamilan 36-40 minggu (trimester ketiga): seminggu sekali." />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/acme"
+            android:text="Makanan yang perlu dihindari"
+            android:textColor="#131313"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/acme"
+            android:textColor="#232323"
+            android:justificationMode="inter_word"
+            android:text="Jika kamu penggemar berat makanan setengah matang, seperti sushi, steak atau telur rebus setengah matang, lebih baik hindari dulu makanan tersebut.Hindari juga mengonsumsi buah atau sayuran yang belum dicuci dan susu yang belum dipasteurisasi serta produk olahannya." />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/acme"
+            android:text="Posisi tidur yang baik dan nyaman"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/acme"
+            android:textColor="#232323"
+            android:justificationMode="inter_word"
+            android:text="Saat kehamilan sudah menginjak usia 5 bulan, kamu sudah tidak disarankan lagi untuk tidur telentang. Posisi tidur terbaik saat hamil adalah menghadap ke kiri. Selain lebih nyaman, tidur dengan posisi ini bisa melancarkan sirkulasi darah dan asupan nutrisi untuk bayimu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/acme"
-        android:text="Makanan yang perlu dihindari"
-        android:textColor="#131313"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:onClick="introMateri2"
+            android:text="Back" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="375dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/acme"
-        android:text="Jika kamu penggemar berat makanan setengah matang, seperti sushi, steak atau telur rebus setengah matang, lebih baik hindari dulu makanan tersebut.Hindari juga mengonsumsi buah atau sayuran yang belum dicuci dan susu yang belum dipasteurisasi serta produk olahannya."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:onClick="buttonHome"
+            android:text="Home" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/acme"
-        android:text="Posisi tidur yang baik dan nyaman"
-        android:textColor="#090909"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="373dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/acme"
-        android:text="Saat kehamilan sudah menginjak usia 5 bulan, kamu sudah tidak disarankan lagi untuk tidur telentang. Posisi tidur terbaik saat hamil adalah menghadap ke kiri. Selain lebih nyaman, tidur dengan posisi ini bisa melancarkan sirkulasi darah dan asupan nutrisi untuk bayimu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 </androidx.constraintlayout.widget.ConstraintLayout>
