@@ -7,6 +7,12 @@ android {
     buildToolsVersion "30.0.3"
     android.defaultConfig.vectorDrawables.useSupportLibrary = true
 
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+
     defaultConfig {
         applicationId "com.example.kuis"
         minSdkVersion 16
